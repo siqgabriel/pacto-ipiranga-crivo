@@ -190,8 +190,6 @@ img { max-width: 100%; height: auto; display: block; }
 .combinado__inner {
   width: min(100%, 1320px); margin: 0 auto;
   padding: clamp(3.5rem, 8vw, 6rem) clamp(1.4rem, 4vw, 3.5rem);
-  display: grid; gap: clamp(2.5rem, 5vw, 5rem);
-  grid-template-columns: 1.15fr 1fr; align-items: center;
 }
 .combinado__apoio { margin: 1.4rem 0 0; font-size: 1.15rem; font-weight: 400; opacity: .9; }
 
