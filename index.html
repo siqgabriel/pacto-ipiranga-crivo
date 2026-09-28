@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pacto Ipiranga · Meu pacto da semana</title>
+  <meta name="description" content="Tire uma prioridade da intenção e coloque-a na agenda. Preencha o seu PACTO — o pacto de execução.">
+  <meta name="theme-color" content="#0045B5">
+  <meta property="og:title" content="Pacto Ipiranga · Meu pacto da semana">
+  <meta property="og:description" content="Prioridade, Ação, Compromisso, Tempo e Olhar. Segunda-feira, ele abre o seu dia.">
+  <meta property="og:image" content="assets/img/hero-estrada.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230045B5'/><text x='32' y='45' font-family='Arial' font-weight='800' font-size='38' fill='%23FFD100' text-anchor='middle'>P</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="pular" href="#pacto">Pular para o formulário</a>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="inicio">
+    <div class="hero__faixas" aria-hidden="true">
+      <span class="faixa faixa--ambar"></span>
+      <span class="faixa faixa--laranja"></span>
+      <span class="faixa faixa--foto"></span>
+    </div>
+
+    <div class="hero__conteudo">
+      <div class="lockup">
+        <img src="assets/img/crivo.png" alt="Crivo Hub" class="lockup__crivo" width="500" height="283">
+        <span class="lockup__divisor" aria-hidden="true"></span>
+        <img src="assets/img/ipiranga.png" alt="Ipiranga" class="lockup__ipiranga" width="600" height="173">
+      </div>
+
+      <p class="sobretitulo">momento 3 · agora é com você</p>
+      <h1 class="titulo-display">
+        <span class="leve">Meu pacto</span>
+        <span class="forte">da semana.</span>
+      </h1>
+      <p class="hero__lead">Tirar uma prioridade da intenção e colocá-la na agenda. Um caso real — nome e sobrenome.</p>
+
+      <a href="#pacto" class="botao botao--azul">Preencher o meu PACTO</a>
+      <p class="hero__meta">Pacto de execução · Rodovias · com Jordete Braga</p>
+    </div>
+  </header>
+
+  <!-- ============ COMO FUNCIONA ============ -->
+  <section class="combinado" aria-labelledby="combinado-titulo">
+    <div class="combinado__inner">
+      <div>
+        <p class="sobretitulo sobretitulo--claro">entre querer e fazer</p>
+        <h2 id="combinado-titulo" class="titulo-secao">
+          A distância entre a intenção e a ação <span class="destaque">é onde o resultado se perde.</span>
+        </h2>
+        <p class="combinado__apoio">Só a ação com data na agenda fecha a conta.</p>
+      </div>
+      <ol class="passos">
+        <li><strong>Escolha um caso real.</strong> Um asseguramento ou posto desta semana.</li>
+        <li><strong>Preencha P·A·C·T·O.</strong> Prioridade, Ação, Compromisso, Tempo e Olhar.</li>
+        <li><strong>Diga em voz alta</strong> pra quem está do seu lado — e assine.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FORMULÁRIO / CARTÃO ============ -->
+  <main class="palco" id="pacto">
+    <svg class="triangulos triangulos--sup" viewBox="0 0 300 320" aria-hidden="true">
+      <g fill="#FFD100" stroke="#FFD100" stroke-width="10" stroke-linejoin="round">
+        <polygon points="150,20 190,60 140,70"/><polygon points="240,40 290,70 240,95"/>
+        <polygon points="200,120 250,150 205,175"/><polygon points="270,150 300,195 255,200"/>
+        <polygon points="160,210 205,245 155,260"/><polygon points="240,250 290,280 240,305"/>
+      </g>
+    </svg>
+    <svg class="triangulos triangulos--inf" viewBox="0 0 300 320" aria-hidden="true">
+      <g fill="#FFD100" stroke="#FFD100" stroke-width="10" stroke-linejoin="round">
+        <polygon points="20,40 60,20 55,70"/><polygon points="90,100 140,80 130,140"/>
+        <polygon points="10,150 60,130 50,190"/><polygon points="120,200 170,180 160,240"/>
+        <polygon points="30,250 80,230 70,290"/><polygon points="170,280 215,260 205,315"/>
+      </g>
+    </svg>
+
+    <div class="palco__grade">
+      <!-- Progresso P·A·C·T·O -->
+      <aside class="progresso" aria-label="Progresso do seu pacto">
+        <p class="sobretitulo sobretitulo--claro progresso__rotulo">o seu pacto</p>
+        <ol class="progresso__letras">
+          <li data-letra="prioridade"><a href="#campo-prioridade">P</a></li>
+          <li data-letra="acao"><a href="#campo-acao">A</a></li>
+          <li data-letra="compromisso"><a href="#campo-compromisso">C</a></li>
+          <li data-letra="tempo"><a href="#campo-tempo">T</a></li>
+          <li data-letra="olhar"><a href="#campo-olhar">O</a></li>
+        </ol>
+        <p class="progresso__contagem" aria-live="polite"><span id="contagem">0</span> de 5</p>
+      </aside>
+
+      <form class="cartao" id="form-pacto" novalidate>
+        <div class="cartao__topo">
+          <img src="assets/img/ipiranga-amarelo.png" alt="Ipiranga" width="700" height="195">
+          <span>Pacto de execução</span>
+        </div>
+
+        <div class="cartao__corpo">
+          <h2 class="cartao__titulo">Meu pacto da semana</h2>
+          <p class="cartao__sub">Tirar uma prioridade da intenção e colocá-la na agenda. Um caso real — nome e sobrenome.</p>
+
+          <div class="identificacao">
+            <div class="campo-linha">
+              <label for="consultor">Consultor(a)</label>
+              <input id="consultor" name="consultor" type="text" autocomplete="name" maxlength="120" required placeholder="Seu nome e sobrenome">
+            </div>
+            <div class="campo-linha">
+              <label for="semanaDe">Semana de</label>
+              <input id="semanaDe" name="semanaDe" type="date" required>
+            </div>
+            <div class="campo-linha campo-linha--inteiro">
+              <label for="clientePosto">Cliente / posto foco</label>
+              <input id="clientePosto" name="clientePosto" type="text" maxlength="200" required placeholder="Um asseguramento ou posto real desta semana">
+            </div>
+          </div>
+
+          <div class="blocos">
+            <div class="bloco" id="campo-prioridade">
+              <span class="bloco__letra" aria-hidden="true">P</span>
+              <div class="bloco__conteudo">
+                <label for="prioridade" class="bloco__titulo">Prioridade</label>
+                <p class="bloco__pergunta" id="q-prioridade">O que realmente precisa de mim esta semana, no meio de tudo?</p>
+                <textarea id="prioridade" name="prioridade" rows="2" maxlength="2000" required aria-describedby="q-prioridade"></textarea>
+              </div>
+            </div>
+
+            <div class="bloco" id="campo-acao">
+              <span class="bloco__letra" aria-hidden="true">A</span>
+              <div class="bloco__conteudo">
+                <label for="acao" class="bloco__titulo">Ação</label>
+                <p class="bloco__pergunta" id="q-acao">Qual movimento concreto eu faço? (não “renovar” — o passo que antecipa)</p>
+                <textarea id="acao" name="acao" rows="2" maxlength="2000" required aria-describedby="q-acao"></textarea>
+              </div>
+            </div>
+
+            <div class="bloco" id="campo-compromisso">
+              <span class="bloco__letra" aria-hidden="true">C</span>
+              <div class="bloco__conteudo">
+                <label for="compromisso" class="bloco__titulo">Compromisso</label>
+                <p class="bloco__pergunta" id="q-compromisso">O que eu assumo, sem esperar que outra área resolva por mim?</p>
+                <textarea id="compromisso" name="compromisso" rows="2" maxlength="2000" required aria-describedby="q-compromisso"></textarea>
+              </div>
+            </div>
+
+            <div class="bloco" id="campo-tempo">
+              <span class="bloco__letra" aria-hidden="true">T</span>
+              <div class="bloco__conteudo">
+                <label for="tempoAgenda" class="bloco__titulo">Tempo</label>
+                <p class="bloco__pergunta" id="q-tempo">Quando? Que dia e hora isso entra na minha agenda?</p>
+                <div class="tempo">
+                  <input id="tempoAgenda" name="tempoAgenda" type="datetime-local" required aria-describedby="q-tempo">
+                  <textarea id="tempo" name="tempo" rows="1" maxlength="2000" placeholder="Algum detalhe? (opcional)" aria-label="Detalhe do tempo (opcional)"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="bloco" id="campo-olhar">
+              <span class="bloco__letra" aria-hidden="true">O</span>
+              <div class="bloco__conteudo">
+                <label for="olhar" class="bloco__titulo">Olhar</label>
+                <p class="bloco__pergunta" id="q-olhar">Como eu acompanho? O que observo pra saber se avancei?</p>
+                <textarea id="olhar" name="olhar" rows="2" maxlength="2000" required aria-describedby="q-olhar"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Compromisso -->
+          <fieldset class="assinatura">
+            <legend class="visualmente-oculto">Assinatura do pacto</legend>
+            <label class="assinatura__check">
+              <input type="checkbox" id="comprometido" name="comprometido" required>
+              <span>Eu me comprometo com este pacto.</span>
+            </label>
+
+            <div class="assinatura__linhas">
+              <div class="assinatura__campo">
+                <div class="assinatura__tela" id="tela-wrap">
+                  <canvas id="tela-assinatura" aria-label="Área para assinar com o dedo ou o mouse" role="img"></canvas>
+                  <span class="assinatura__dica" id="dica-assinatura">Assine aqui com o dedo ou o mouse</span>
+                  <button type="button" class="assinatura__limpar" id="limpar-assinatura">Limpar</button>
+                </div>
+                <span class="assinatura__rotulo">Assinatura</span>
+              </div>
+              <div class="assinatura__campo assinatura__campo--data">
+                <input id="dataAssinatura" name="dataAssinatura" type="date" required aria-label="Data da assinatura">
+                <span class="assinatura__rotulo">Data</span>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Formato -->
+          <fieldset class="formato">
+            <legend>Como você quer levar o seu pacto?</legend>
+            <div class="formato__opcoes">
+              <label class="opcao">
+                <input type="radio" name="formato" value="pdf" checked>
+                <span class="opcao__caixa"><strong>PDF</strong><small>pronto pra imprimir</small></span>
+              </label>
+              <label class="opcao">
+                <input type="radio" name="formato" value="docx">
+                <span class="opcao__caixa"><strong>Word</strong><small>pra editar depois</small></span>
+              </label>
+              <label class="opcao">
+                <input type="radio" name="formato" value="ambos">
+                <span class="opcao__caixa"><strong>Os dois</strong><small>PDF e Word</small></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <p class="erro-geral" id="erro-geral" role="alert" hidden></p>
+
+          <button type="submit" class="botao botao--azul botao--largo" id="botao-enviar">
+            <span class="botao__texto">Firmar o meu pacto</span>
+          </button>
+        </div>
+
+        <div class="cartao__rodape">
+          <span>Cultura Ipiranga · Um time cinco estrelas</span>
+          <em>Abastecendo a vida em movimento</em>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- ============ CONCLUSÃO ============ -->
+  <section class="fechamento" id="fechamento" hidden tabindex="-1" aria-labelledby="fechamento-titulo">
+    <div class="fechamento__faixas" aria-hidden="true">
+      <span class="faixa faixa--ambar"></span>
+      <span class="faixa faixa--laranja"></span>
+      <span class="faixa faixa--foto"></span>
+    </div>
+    <div class="fechamento__conteudo">
+      <p class="sobretitulo sobretitulo--claro">pacto firmado</p>
+      <h2 id="fechamento-titulo" class="titulo-secao titulo-secao--grande">
+        Segunda-feira, <span class="destaque">ele abre o seu dia.</span>
+      </h2>
+      <p class="fechamento__texto">Nem tudo está na sua mão. Mas o que está, precisa estar muito bem cuidado.</p>
+      <p class="status" id="status-envio" role="status"></p>
+      <div class="fechamento__acoes">
+        <button type="button" class="botao botao--amarelo" id="baixar-pdf">Baixar PDF</button>
+        <button type="button" class="botao botao--contorno" id="baixar-docx">Baixar Word</button>
+        <button type="button" class="botao botao--contorno" id="reenviar" hidden>Tentar registrar de novo</button>
+      </div>
+      <button type="button" class="link-claro" id="novo-pacto">Preencher outro pacto</button>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="rodape__inner">
+      <div class="lockup lockup--claro">
+        <img src="assets/img/crivo-branco.png" alt="Crivo Hub" class="lockup__crivo" width="500" height="283">
+        <span class="lockup__divisor" aria-hidden="true"></span>
+        <img src="assets/img/ipiranga-branco.png" alt="Ipiranga" class="lockup__ipiranga" width="600" height="173">
+      </div>
+      <p class="rodape__frase">Vocês são um time cinco estrelas. <strong>O jogo continua na segunda.</strong></p>
+      <p class="rodape__assina">Abastecendo a vida em movimento.</p>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/jspdf.umd.min.js" defer></script>
+  <script src="assets/vendor/docx.iife.js" defer></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

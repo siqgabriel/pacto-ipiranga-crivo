@@ -1,0 +1,44 @@
+rules_version = '2';
+
+// Pacto Ipiranga — o site só pode CRIAR pactos.
+// Ninguém lê, edita ou apaga pelo navegador; a consulta é feita pelo Firebase Console.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function texto(campo, min, max) {
+      return request.resource.data[campo] is string
+        && request.resource.data[campo].size() >= min
+        && request.resource.data[campo].size() <= max;
+    }
+
+    match /pactos/{pactoId} {
+      allow read, update, delete: if false;
+
+      allow create: if request.resource.data.keys().hasOnly([
+            'consultor', 'semanaDe', 'clientePosto',
+            'prioridade', 'acao', 'compromisso', 'tempo', 'tempoAgenda', 'olhar',
+            'comprometido', 'assinatura', 'dataAssinatura', 'formato',
+            'origem', 'versao', 'criadoEm'
+          ])
+        && texto('consultor', 2, 120)
+        && texto('semanaDe', 10, 10)
+        && texto('clientePosto', 2, 200)
+        && texto('prioridade', 2, 2000)
+        && texto('acao', 2, 2000)
+        && texto('compromisso', 2, 2000)
+        && texto('tempo', 0, 2000)
+        && texto('tempoAgenda', 0, 16)
+        && texto('olhar', 2, 2000)
+        && request.resource.data.comprometido == true
+        && texto('assinatura', 20, 250000)
+        && request.resource.data.assinatura.matches('^data:image/png;base64,.*')
+        && texto('dataAssinatura', 10, 10)
+        && request.resource.data.formato in ['pdf', 'docx', 'ambos']
+        && request.resource.data.criadoEm == request.time;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
